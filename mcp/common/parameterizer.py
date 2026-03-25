@@ -83,7 +83,9 @@ async def extract_value_phrases(nl_query: str) -> Dict[str, List[str]]:
         {nl_query}
     """
     )
-
+    import os
+    key = os.environ.get('GEMINI_API_KEY', 'N/A')
+    print(f"Current Key: {key}")
     client = genai.Client()
     try:
         response = await client.aio.models.generate_content(
