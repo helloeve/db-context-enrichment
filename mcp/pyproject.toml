@@ -38,4 +38,7 @@ dev = [
 
 [tool.db-context-enrichment]
 toolbox_version = "0.31.0"
+<<<<<<< HEAD
 evalbench_version = "1.1.0"
+=======
+>>>>>>> main
